@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header class="navbar navbar-fixed-bottom">
+	<div class="navbar-inner">
+		<div class="container">
+			<ul class="nav pull-right">
+				<li><a href="#">Sobre nosotros</a></li>
+				<li><a href="#">Cont&aacute;ctanos</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container">
 
-<%= yield %>
-
+	<%= yield %>
+</div>
+	<footer>
+		<div>
+			&copy; QuickPrint, 2013
+		</div>
+	</footer>
 </body>
 </html>
