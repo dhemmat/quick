@@ -7,24 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header class="navbar navbar-fixed-bottom">
+<header class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav pull-right">
+				<li><a href="#">Inscribe tu empresa</a></li>
 				<li><a href="#">Sobre nosotros</a></li>
 				<li><a href="#">Cont&aacute;ctanos</a></li>
+				<li class="divider-vertical"></li>
 			</ul>
 		</div>
 	</div>
 </header>
 <div class="container">
-
 	<%= yield %>
 </div>
-	<footer>
-		<div>
-			&copy; QuickPrint, 2013
+<footer class="navbar navbar-fixed-bottom navbar-inverse">
+	<div class="navbar-inner">
+		<div id="footer" class="container text-center">
+			<ul class="nav center">
+				<li><a href="#">&copy; QuickPrint, 2013</a></li>
+			</ul>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 </html>
